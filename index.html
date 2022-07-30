@@ -55,20 +55,7 @@
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
     </script>
-    <script>
-        var createScene = function () {
-            // Create a scene.
-            var scene = new BABYLON.Scene(engine);
-        
-            BABYLON.SceneLoader.ImportMesh("", "./assets/", "crystal cluster.gltf", scene, function (meshes) {          
-                scene.createDefaultCameraOrLight(true, true, true);
-                scene.createDefaultEnvironment();
-        
-            });
-        
-            return scene;
-        };
-    </script>
+    <script src="script.js"></script>
     <script>
                 window.initFunction = async function() {
                     
